@@ -10,17 +10,16 @@ using System.Windows.Forms;
 
 namespace SPM_ASG1
 {
-    public partial class Form1 : Form
+    public partial class freegamemode : Form
     {
-        public Form1()
+        public freegamemode()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Menu menu = new Menu();
-            menu.Show(this);
+
         }
     }
 }
