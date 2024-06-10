@@ -24,12 +24,16 @@ namespace assignment1
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            gameInstructionForArcadeMode arcademodepage = new gameInstructionForArcadeMode();
+            arcademodepage.Show();
+            this.Hide();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
+            gameInstructionForFreePlay freeGameMode = new gameInstructionForFreePlay();
+            freeGameMode.Show();
+            this.Hide();
         }
 
         private void button1_Click_2(object sender, EventArgs e)
@@ -50,6 +54,13 @@ namespace assignment1
         private void button2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void DisplayHighScoreBtn_Click(object sender, EventArgs e)
+        {
+            displayHighScore displayHighScore = new displayHighScore();
+            displayHighScore.Show();
+            this.Hide();
         }
     }
 }

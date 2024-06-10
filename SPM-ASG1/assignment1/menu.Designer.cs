@@ -84,6 +84,7 @@
             this.DisplayHighScoreBtn.TabIndex = 3;
             this.DisplayHighScoreBtn.Text = "Display High Scores";
             this.DisplayHighScoreBtn.UseVisualStyleBackColor = false;
+            this.DisplayHighScoreBtn.Click += new System.EventHandler(this.DisplayHighScoreBtn_Click);
             // 
             // ExitBtn
             // 
