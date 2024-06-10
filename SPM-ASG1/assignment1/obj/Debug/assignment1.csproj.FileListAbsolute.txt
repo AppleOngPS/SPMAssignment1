@@ -1,0 +1,15 @@
+C:\Users\ongap\OneDrive\Desktop\NP\SPM\assignment1_update\SPM-ASG1\assignment1\bin\Debug\assignment1.exe.config
+C:\Users\ongap\OneDrive\Desktop\NP\SPM\assignment1_update\SPM-ASG1\assignment1\bin\Debug\assignment1.exe
+C:\Users\ongap\OneDrive\Desktop\NP\SPM\assignment1_update\SPM-ASG1\assignment1\bin\Debug\assignment1.pdb
+C:\Users\ongap\OneDrive\Desktop\NP\SPM\assignment1_update\SPM-ASG1\assignment1\obj\Debug\assignment1.csproj.AssemblyReference.cache
+C:\Users\ongap\OneDrive\Desktop\NP\SPM\assignment1_update\SPM-ASG1\assignment1\obj\Debug\assignment1.menu.resources
+C:\Users\ongap\OneDrive\Desktop\NP\SPM\assignment1_update\SPM-ASG1\assignment1\obj\Debug\assignment1.Properties.Resources.resources
+C:\Users\ongap\OneDrive\Desktop\NP\SPM\assignment1_update\SPM-ASG1\assignment1\obj\Debug\assignment1.csproj.GenerateResource.cache
+C:\Users\ongap\OneDrive\Desktop\NP\SPM\assignment1_update\SPM-ASG1\assignment1\obj\Debug\assignment1.csproj.CoreCompileInputs.cache
+C:\Users\ongap\OneDrive\Desktop\NP\SPM\assignment1_update\SPM-ASG1\assignment1\obj\Debug\assignment1.exe
+C:\Users\ongap\OneDrive\Desktop\NP\SPM\assignment1_update\SPM-ASG1\assignment1\obj\Debug\assignment1.pdb
+C:\Users\ongap\OneDrive\Desktop\NP\SPM\assignment1_update\SPM-ASG1\assignment1\bin\Debug\Database1.mdf
+C:\Users\ongap\OneDrive\Desktop\NP\SPM\assignment1_update\SPM-ASG1\assignment1\bin\Debug\Database1_log.ldf
+C:\Users\ongap\OneDrive\Desktop\NP\SPM\assignment1_update\SPM-ASG1\assignment1\obj\Debug\assignment1.arcadeMode.resources
+C:\Users\ongap\OneDrive\Desktop\NP\SPM\assignment1_update\SPM-ASG1\assignment1\obj\Debug\assignment1.gameInstructionForArcadeMode.resources
+C:\Users\ongap\OneDrive\Desktop\NP\SPM\assignment1_update\SPM-ASG1\assignment1\obj\Debug\assignment1.gameInstructionForFreePlay.resources
