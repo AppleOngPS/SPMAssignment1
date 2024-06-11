@@ -41,9 +41,10 @@
             // 
             this.arcardModeBtn.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.arcardModeBtn.Font = new System.Drawing.Font("Showcard Gothic", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.arcardModeBtn.Location = new System.Drawing.Point(102, 89);
+            this.arcardModeBtn.Location = new System.Drawing.Point(51, 46);
+            this.arcardModeBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.arcardModeBtn.Name = "arcardModeBtn";
-            this.arcardModeBtn.Size = new System.Drawing.Size(677, 79);
+            this.arcardModeBtn.Size = new System.Drawing.Size(338, 41);
             this.arcardModeBtn.TabIndex = 0;
             this.arcardModeBtn.Text = "Arcade Game Mode";
             this.arcardModeBtn.UseVisualStyleBackColor = false;
@@ -53,9 +54,10 @@
             // 
             this.FreeGameBtn.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.FreeGameBtn.Font = new System.Drawing.Font("Showcard Gothic", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FreeGameBtn.Location = new System.Drawing.Point(102, 197);
+            this.FreeGameBtn.Location = new System.Drawing.Point(51, 102);
+            this.FreeGameBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.FreeGameBtn.Name = "FreeGameBtn";
-            this.FreeGameBtn.Size = new System.Drawing.Size(677, 79);
+            this.FreeGameBtn.Size = new System.Drawing.Size(338, 41);
             this.FreeGameBtn.TabIndex = 1;
             this.FreeGameBtn.Text = "Free Game Mode";
             this.FreeGameBtn.UseVisualStyleBackColor = false;
@@ -65,9 +67,10 @@
             // 
             this.LoadSaveBtn.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.LoadSaveBtn.Font = new System.Drawing.Font("Showcard Gothic", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoadSaveBtn.Location = new System.Drawing.Point(102, 306);
+            this.LoadSaveBtn.Location = new System.Drawing.Point(51, 159);
+            this.LoadSaveBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LoadSaveBtn.Name = "LoadSaveBtn";
-            this.LoadSaveBtn.Size = new System.Drawing.Size(677, 79);
+            this.LoadSaveBtn.Size = new System.Drawing.Size(338, 41);
             this.LoadSaveBtn.TabIndex = 2;
             this.LoadSaveBtn.Text = "Load Save Game";
             this.LoadSaveBtn.UseVisualStyleBackColor = false;
@@ -78,9 +81,10 @@
             this.DisplayHighScoreBtn.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.DisplayHighScoreBtn.Font = new System.Drawing.Font("Showcard Gothic", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DisplayHighScoreBtn.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.DisplayHighScoreBtn.Location = new System.Drawing.Point(102, 416);
+            this.DisplayHighScoreBtn.Location = new System.Drawing.Point(51, 216);
+            this.DisplayHighScoreBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DisplayHighScoreBtn.Name = "DisplayHighScoreBtn";
-            this.DisplayHighScoreBtn.Size = new System.Drawing.Size(677, 79);
+            this.DisplayHighScoreBtn.Size = new System.Drawing.Size(338, 41);
             this.DisplayHighScoreBtn.TabIndex = 3;
             this.DisplayHighScoreBtn.Text = "Display High Scores";
             this.DisplayHighScoreBtn.UseVisualStyleBackColor = false;
@@ -90,9 +94,10 @@
             // 
             this.ExitBtn.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ExitBtn.Font = new System.Drawing.Font("Showcard Gothic", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExitBtn.Location = new System.Drawing.Point(102, 516);
+            this.ExitBtn.Location = new System.Drawing.Point(51, 268);
+            this.ExitBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ExitBtn.Name = "ExitBtn";
-            this.ExitBtn.Size = new System.Drawing.Size(677, 79);
+            this.ExitBtn.Size = new System.Drawing.Size(338, 41);
             this.ExitBtn.TabIndex = 4;
             this.ExitBtn.Text = "Exit Game";
             this.ExitBtn.UseVisualStyleBackColor = false;
@@ -100,18 +105,21 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(783, 26);
+            this.button1.Location = new System.Drawing.Point(392, 14);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 39);
+            this.button1.Size = new System.Drawing.Size(46, 20);
             this.button1.TabIndex = 5;
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_4);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(670, 26);
+            this.button2.Location = new System.Drawing.Point(335, 14);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(107, 39);
+            this.button2.Size = new System.Drawing.Size(54, 20);
             this.button2.TabIndex = 6;
             this.button2.Text = "Sign up";
             this.button2.UseVisualStyleBackColor = true;
@@ -119,9 +127,9 @@
             // 
             // menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(920, 652);
+            this.ClientSize = new System.Drawing.Size(460, 339);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.ExitBtn);
@@ -129,6 +137,7 @@
             this.Controls.Add(this.LoadSaveBtn);
             this.Controls.Add(this.FreeGameBtn);
             this.Controls.Add(this.arcardModeBtn);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "menu";
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.menu_Load);

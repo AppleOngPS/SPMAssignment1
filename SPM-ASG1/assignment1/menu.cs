@@ -53,13 +53,22 @@ namespace assignment1
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            SignUp signUp = new SignUp();
+            signUp.Show();
+            this.Hide();
         }
 
         private void DisplayHighScoreBtn_Click(object sender, EventArgs e)
         {
             displayHighScore displayHighScore = new displayHighScore();
             displayHighScore.Show();
+            this.Hide();
+        }
+
+        private void button1_Click_4(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
             this.Hide();
         }
     }
