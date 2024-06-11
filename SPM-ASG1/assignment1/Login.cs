@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ namespace assignment1
 {
     public partial class Login : Form
     {
+        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\NP.2\\SPM\\C#\\SPM-ASG1\\assignment1\\Database1.mdf;Integrated Security=True");
         public Login()
         {
             InitializeComponent();
@@ -20,6 +22,34 @@ namespace assignment1
         private void Login_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void submitBttn_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            SqlCommand cmd = con.CreateCommand();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "Select * From [dbo].[Table] WHERE name='" + usernameInput.Text + "' and password='"+passwordInput.Text+"'";
+            cmd.ExecuteNonQuery();
+            SqlDataReader dr = cmd.ExecuteReader();
+            if (dr.Read() == true)
+            {
+                menu menu = new menu();
+                menu.Show();
+                this.Close();
+
+                MessageBox.Show("Login succesfully.", "", MessageBoxButtons.OK);
+
+            }
+            else
+            {
+                usernameInput.Text = "";
+                passwordInput.Text = "";
+
+                MessageBox.Show("Please choose a unique username.", "", MessageBoxButtons.OK);
+            }
+            con.Close();
         }
     }
 }
