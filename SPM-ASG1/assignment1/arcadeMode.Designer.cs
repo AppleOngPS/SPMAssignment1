@@ -4488,67 +4488,114 @@
             this.X19Y18.TabStop = false;
             // 
             // X19Y19
-            // 
+            this.label3.Text = "label3";
             this.X19Y19.Location = new System.Drawing.Point(3442, 3570);
             this.X19Y19.Name = "X19Y19";
             this.X19Y19.Size = new System.Drawing.Size(100, 50);
             this.X19Y19.TabIndex = 404;
             this.X19Y19.TabStop = false;
-            // 
-            // X19Y20
-            // 
+            this.label4.Size = new System.Drawing.Size(44, 16);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "label4";
             this.X19Y20.Location = new System.Drawing.Point(3635, 3570);
             this.X19Y20.Name = "X19Y20";
             this.X19Y20.Size = new System.Drawing.Size(100, 50);
             this.X19Y20.TabIndex = 405;
             this.X19Y20.TabStop = false;
-            // 
-            // X20Y17
-            // 
+            this.label5.Size = new System.Drawing.Size(44, 16);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "label5";
             this.X20Y17.Location = new System.Drawing.Point(3062, 3768);
             this.X20Y17.Name = "X20Y17";
             this.X20Y17.Size = new System.Drawing.Size(100, 50);
             this.X20Y17.TabIndex = 406;
             this.X20Y17.TabStop = false;
-            // 
-            // X20Y18
-            // 
+            this.label6.Size = new System.Drawing.Size(44, 16);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "label6";
             this.X20Y18.Location = new System.Drawing.Point(3253, 3768);
             this.X20Y18.Name = "X20Y18";
             this.X20Y18.Size = new System.Drawing.Size(100, 50);
             this.X20Y18.TabIndex = 407;
             this.X20Y18.TabStop = false;
-            // 
-            // X20Y19
-            // 
+            this.label7.Size = new System.Drawing.Size(44, 16);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "label7";
             this.X20Y19.Location = new System.Drawing.Point(3442, 3768);
             this.X20Y19.Name = "X20Y19";
             this.X20Y19.Size = new System.Drawing.Size(100, 50);
             this.X20Y19.TabIndex = 408;
             this.X20Y19.TabStop = false;
-            // 
-            // X20Y20
-            // 
+            this.label8.TabIndex = 8;
+            this.label8.Text = "label13";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             this.X20Y20.Location = new System.Drawing.Point(3635, 3768);
             this.X20Y20.Name = "X20Y20";
             this.X20Y20.Size = new System.Drawing.Size(166, 102);
             this.X20Y20.TabIndex = 409;
             this.X20Y20.TabStop = false;
+            this.label9.Size = new System.Drawing.Size(44, 16);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "label9";
+            // 
+            // nav
+            // 
+            this.nav.Controls.Add(this.button1);
+            this.nav.Dock = System.Windows.Forms.DockStyle.Right;
+            this.nav.Location = new System.Drawing.Point(2746, 0);
+            this.nav.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.nav.Name = "nav";
+            this.nav.Size = new System.Drawing.Size(138, 1648);
+            this.nav.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(4, 19);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(112, 36);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "back";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(197, 6);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 33);
+            this.comboBox2.TabIndex = 10;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::assignment1.Properties.Resources.homeIcon;
+            this.pictureBox2.Location = new System.Drawing.Point(49, 14);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(107, 41);
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(20, 70);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(141, 109);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // arcadeMode
-            // 
+            this.ClientSize = new System.Drawing.Size(2884, 1648);
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2884, 1648);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.nav);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "arcadeMode";
             this.Text = "arcadeMode";
             this.Load += new System.EventHandler(this.arcadeMode_Load);
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.nav.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.homeIconBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X1Y2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X1Y1)).EndInit();
@@ -4950,14 +4997,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.X20Y18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X20Y19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X20Y20)).EndInit();
+            this.nav.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Panel nav;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.PictureBox homeIconBtn;
         private System.Windows.Forms.PictureBox X1Y2;
         private System.Windows.Forms.PictureBox X1Y1;
@@ -5359,5 +5406,8 @@
         private System.Windows.Forms.PictureBox X20Y18;
         private System.Windows.Forms.PictureBox X20Y19;
         private System.Windows.Forms.PictureBox X20Y20;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
     }
 }
