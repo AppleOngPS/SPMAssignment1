@@ -86,6 +86,7 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="SharedData.cs" />
     <Compile Include="SignUp.cs">
       <SubType>Form</SubType>
     </Compile>

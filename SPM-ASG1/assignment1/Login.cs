@@ -35,11 +35,14 @@ namespace assignment1
             SqlDataReader dr = cmd.ExecuteReader();
             if (dr.Read() == true)
             {
+                string name = dr["Name"].ToString();
+                SharedData.Data = name;
                 menu menu = new menu();
                 menu.Show();
+                
                 this.Close();
 
-                MessageBox.Show("Login succesfully.", "", MessageBoxButtons.OK);
+                MessageBox.Show("Login succesfully.", "valid Message", MessageBoxButtons.OK,MessageBoxIcon.Information);
 
             }
             else
@@ -47,7 +50,7 @@ namespace assignment1
                 usernameInput.Text = "";
                 passwordInput.Text = "";
 
-                MessageBox.Show("Please choose a unique username.", "", MessageBoxButtons.OK);
+                MessageBox.Show("Please choose a unique username or wrong password.", "Invalid Message", MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
             con.Close();
         }

@@ -15,11 +15,12 @@ namespace assignment1
         public menu()
         {
             InitializeComponent();
+            
         }
-
+       
         private void menu_Load(object sender, EventArgs e)
         {
-
+            lblName.Text = SharedData.Data;
         }
 
         private void button1_Click(object sender, EventArgs e)
