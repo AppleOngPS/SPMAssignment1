@@ -24,7 +24,7 @@ namespace assignment1
             con.Open();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "Select * From [dbo].[Table] ";
+            cmd.CommandText = "SELECT TOP 10 * FROM [dbo].[Table]  ORDER BY score DESC ";
             cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -33,9 +33,34 @@ namespace assignment1
             dataGridView1.Columns["password"].Visible = false;
             dataGridView1.Columns[0].Visible = false;
             con.Close();
+            CustomizeRowHeaders();
+           
+            
 
         }
-
         
+
+        private void CustomizeRowHeaders()
+        {
+           
+            // Handle the RowPostPaint event to customize row header content
+            dataGridView1.RowPostPaint += new DataGridViewRowPostPaintEventHandler(dataGridView1_RowPostPaint);
+        }
+
+        private void dataGridView1_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
+        {
+            // Custom text to display in row headers
+            string rowHeaderText = (e.RowIndex + 1).ToString(); // Example: rank (row number)
+
+            // Calculate the size of the text
+            SizeF textSize = e.Graphics.MeasureString(rowHeaderText, dataGridView1.Font);
+
+            // Define the bounds for the text
+            Rectangle bounds = new Rectangle(e.RowBounds.Left, e.RowBounds.Top, dataGridView1.RowHeadersWidth, e.RowBounds.Height);
+
+            // Draw the text
+            e.Graphics.DrawString(rowHeaderText, dataGridView1.Font, Brushes.Black, bounds.X + (bounds.Width - textSize.Width) / 2, bounds.Y + (bounds.Height - textSize.Height) / 2);
+        }
+
     }
 }

@@ -31,3 +31,4 @@ C:\NP.2\SPM\C#\SPM-ASG1\assignment1\obj\Debug\assignment1.csproj.CoreCompileInpu
 C:\NP.2\SPM\C#\SPM-ASG1\assignment1\obj\Debug\assignment1.exe
 C:\NP.2\SPM\C#\SPM-ASG1\assignment1\obj\Debug\assignment1.pdb
 C:\NP.2\SPM\C#\SPM-ASG1\assignment1\obj\Debug\assignment1.displayHighScore.resources
+C:\NP.2\SPM\C#\SPM-ASG1\assignment1\obj\Debug\assignment1.freeGameMode.resources
