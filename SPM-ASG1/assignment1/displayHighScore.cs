@@ -13,7 +13,7 @@ namespace assignment1
 {
     public partial class displayHighScore : Form
     {
-        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\NP.2\\SPM\\C#\\SPM-ASG1\\assignment1\\Database1.mdf;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ongap\\OneDrive\\Desktop\\NP\\SPM\\Assignment1_2nd_edit\\SPM-ASG1\\assignment1\\Database1.mdf;Integrated Security=True");
         public displayHighScore()
         {
             InitializeComponent();
@@ -62,5 +62,9 @@ namespace assignment1
             e.Graphics.DrawString(rowHeaderText, dataGridView1.Font, Brushes.Black, bounds.X + (bounds.Width - textSize.Width) / 2, bounds.Y + (bounds.Height - textSize.Height) / 2);
         }
 
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
