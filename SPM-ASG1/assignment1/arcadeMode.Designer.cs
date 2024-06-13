@@ -38,16 +38,15 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.nav = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.nav = new System.Windows.Forms.Panel();
+            this.homeIconBtn = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.nav.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.homeIconBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,7 +54,7 @@
             // 
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(18, 70);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(25, 39);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(2696, 1406);
@@ -86,7 +85,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 188F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 188F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 188F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 195F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 225F));
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label4, 9, 0);
             this.tableLayoutPanel1.Controls.Add(this.label5, 19, 3);
@@ -119,7 +118,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 195F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 195F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 195F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(3830, 3963);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(3860, 3963);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // panel1
@@ -203,26 +202,6 @@
             this.label9.TabIndex = 9;
             this.label9.Text = "label9";
             // 
-            // nav
-            // 
-            this.nav.Controls.Add(this.button1);
-            this.nav.Dock = System.Windows.Forms.DockStyle.Right;
-            this.nav.Location = new System.Drawing.Point(2746, 0);
-            this.nav.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.nav.Name = "nav";
-            this.nav.Size = new System.Drawing.Size(138, 1648);
-            this.nav.TabIndex = 2;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(4, 19);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 36);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "back";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
@@ -231,15 +210,30 @@
             this.comboBox2.Size = new System.Drawing.Size(121, 33);
             this.comboBox2.TabIndex = 10;
             // 
-            // pictureBox2
+            // nav
             // 
-            this.pictureBox2.Image = global::assignment1.Properties.Resources.homeIcon;
-            this.pictureBox2.Location = new System.Drawing.Point(49, 14);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(107, 41);
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.nav.Controls.Add(this.homeIconBtn);
+            this.nav.Dock = System.Windows.Forms.DockStyle.Right;
+            this.nav.Location = new System.Drawing.Point(2746, 0);
+            this.nav.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.nav.Name = "nav";
+            this.nav.Size = new System.Drawing.Size(138, 1648);
+            this.nav.TabIndex = 2;
+            // 
+            // homeIconBtn
+            // 
+            this.homeIconBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.homeIconBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.homeIconBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.homeIconBtn.Image = global::assignment1.Properties.Resources.homeIcon1;
+            this.homeIconBtn.InitialImage = global::assignment1.Properties.Resources.homeIcon1;
+            this.homeIconBtn.Location = new System.Drawing.Point(29, 66);
+            this.homeIconBtn.Name = "homeIconBtn";
+            this.homeIconBtn.Size = new System.Drawing.Size(73, 84);
+            this.homeIconBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.homeIconBtn.TabIndex = 0;
+            this.homeIconBtn.TabStop = false;
+            this.homeIconBtn.Click += new System.EventHandler(this.pictureBox2_Click_1);
             // 
             // pictureBox1
             // 
@@ -255,18 +249,18 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2884, 1648);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.nav);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "arcadeMode";
             this.Text = "arcadeMode";
+            this.Load += new System.EventHandler(this.arcadeMode_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.nav.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.homeIconBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -276,7 +270,6 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel nav;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox comboBox1;
@@ -287,6 +280,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox homeIconBtn;
     }
 }
